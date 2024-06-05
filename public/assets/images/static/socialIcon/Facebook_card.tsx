@@ -1,0 +1,29 @@
+import React from 'react';
+
+const facebook_card = ({ buttonColor, textColor }) => {
+    return (
+        <svg width="58" height="58" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.2" filter="url(#filter0_d_802_256)">
+                <circle cx="23.9999" cy="24" r="20" fill={buttonColor} />
+            </g>
+            <path
+                d="M32.5712 24.0218C32.5712 19.2785 28.7312 15.4288 23.9998 15.4288C19.2683 15.4288 15.4283 19.2785 15.4283 24.0218C15.4283 28.1807 18.3769 31.6437 22.2855 32.4428V26.5996H20.5712V24.0218H22.2855V21.8735C22.2855 20.2151 23.6312 18.866 25.2855 18.866H27.4283V21.4439H25.7141C25.2426 21.4439 24.8569 21.8306 24.8569 22.3032V24.0218H27.4283V26.5996H24.8569V32.5717C29.1855 32.1421 32.5712 28.4815 32.5712 24.0218Z"
+                fill={textColor}
+            />
+            <defs>
+                <filter id="filter0_d_802_256" x="-0.00012207" y="0" width="48" height="48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_802_256" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_802_256" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    );
+};
+
+export default facebook_card;
